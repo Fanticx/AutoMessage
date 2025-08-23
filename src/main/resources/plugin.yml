@@ -1,0 +1,12 @@
+name: CuteMessage
+main: ru.qWins.Message
+version: 1.0.0
+
+author: Fanticx
+
+commands:
+  automessage:
+
+permissions:
+  automessage.admin:
+    default: op
