@@ -1,0 +1,60 @@
+# Настройки плагина AutoMessage by qWins
+# Этот файл управляет автоматическими сообщениями, их текстом, интервалами, звуками и кликабельными ссылками.
+# После изменения файла выполняйте /automessage reload для применения их.
+# Выдать права на команды - automessage.admin
+# src - https://github.com/Fanticx/AutoMessage
+
+# Основной раздел для автоматических сообщений
+auto-messages:
+  enabled: true
+  messages:
+    '0':
+      text:
+        - ' '
+        - '&f&lУвидили читера? Напишите &x&F&D&9&5&B&6&l/report'
+        - '&f&lНужна помощь? Используйте &x&F&D&9&5&B&6&l/help'
+        - '&f&lНашли баг? Сообщите через &x&F&D&9&5&B&6&l/ticket'
+        - ' '
+      hover:
+        - '&fСпасибо за помощь в улучшении сервера!'
+      enabled: true
+      interval: 30
+      sound: minecraft:entity.experience_orb.pickup
+      click-url: https://github.com/Fanticx
+      click-enabled: true
+    '1':
+      text:
+        - ' '
+        - '&f&lИграйте честно! &x&F&D&9&5&B&6&lЧиты = бан'
+        - '&f&lУважайте других игроков &x&F&D&9&5&B&6&l❤'
+        - '&f&lПолные правила: &x&F&D&9&5&B&6&l/rules'
+        - ' '
+      hover:
+        - '&fСоблюдайте правила, и все будут happy!'
+      enabled: true
+      interval: 300
+      sound: minecraft:block.note_block.bit
+      click-url: https://github.com/Fanticx
+      click-enabled: true
+command-messages:
+  help:
+    - '&x&F&D&C&5&E&B&7&l/automessage enable &x&F&D&C&5&E&B&7- &x&C&3&B&D&B&2включить
+    авто-сообщения'
+    - '&x&F&D&C&5&E&B&7&l/automessage disable &x&F&D&C&5&E&B&7- &x&C&3&B&D&B&2отключить
+    авто-сообщения'
+    - '&x&F&D&C&5&E&B&7&l/automessage reload &x&F&D&C&5&E&B&7- &x&C&3&B&D&B&2перезагрузить
+    конфигурацию'
+    - '&x&F&D&C&5&E&B&7&l/automessage toggle <id> &x&F&D&C&5&E&B&7- &x&C&3&B&D&B&2управление
+    сообщениями'
+  no-permission:
+    - '&x&F&C&8&5&1&7 &cНет прав!'
+  invalid-index:
+    - '&x&F&C&8&5&1&7 &cСписок должен быть числом!'
+  success-enable:
+    - '&x&F&B&6&9&2&3 &aАвто-сообщения включены!'
+  success-disable:
+    - '&x&F&C&8&5&1&7 &cАвто-сообщения отключены!'
+  success-reload:
+    - '&x&F&B&6&9&2&3 &aКонфигурация перезагружена!'
+  success-toggle:
+    - '&x&F&B&6&9&2&3 &aСообщение #{index} {state}!'
